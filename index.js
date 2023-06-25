@@ -1,6 +1,6 @@
 window.addEventListener("load", () => {
   let w = window.innerWidth - 200;
-  let h = window.innerHeight - 200;
+  let h = window.innerHeight - 300;
   const parent = document.getElementById("parent");
   let hoverArea = document.createElement("div");
   hoverArea.className = "hover-area";
@@ -17,7 +17,7 @@ window.addEventListener("load", () => {
   function reposition(elem) {
     console.log(Math.floor(Math.random(0,w)));
     elem.style.top = `${getRandomInt(w)}px`;
-    elem.style.left = `${getRandomInt(h)}px`;
+    elem.style.left = `${Math.max(200, getRandomInt(h))}px`;
   }
 
   function getRandomInt(max) {

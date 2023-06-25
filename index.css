@@ -1,5 +1,4 @@
 @import url(small.css) (min-width:0px);
-@import url(large.css) (min-width:700px);
 
 :root {
   --main-bg-color: rgb(35, 35, 35);
@@ -31,7 +30,7 @@ body {
 #heading {
   border: 3px solid white;
   border-radius: 5px;
-  margin-top: 50px;
+  margin-top: 15%;
   padding: 0 16px;
   width: fit-content;
   background-color: var(--alt-bg-color);
