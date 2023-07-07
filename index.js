@@ -16,8 +16,8 @@ window.addEventListener("load", () => {
 
   function reposition(elem) {
     console.log(Math.floor(Math.random(0,w)));
-    elem.style.top = `${getRandomInt(w)}px`;
-    elem.style.left = `${Math.max(200, getRandomInt(h))}px`;
+    elem.style.top = `${getRandomInt(h)}px`;
+    elem.style.left = `${getRandomInt(w)}px`;
   }
 
   function getRandomInt(max) {
