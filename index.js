@@ -12,7 +12,7 @@ window.addEventListener("load", () => {
   parent.appendChild(hoverArea);
   
   hoverArea.onmouseover = () => {reposition(hoverArea)};
-  hoverArea.onclick = () => {reposition(hoverArea)};
+  setInterval(() => {reposition(hoverArea)}, 1000);
 
   function reposition(elem) {
     console.log(Math.floor(Math.random(0,w)));
